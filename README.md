@@ -96,3 +96,21 @@ You will build the analytics backend as specified above. You will integrate with
 make your application complete. 
 
 **You will not (be able to) do this without automation scripts.** 
+
+### Automation scripts
+The requirements for the scripts are as follows:
+
+1. No managed service such as EMR and RDS. 
+
+2. Your scripts are expected to:
+
++ Take my AWS credentials as input. (For the analytic tasks, your scripts also take the number of nodes). 
+
++ Spin up new instances from a base Ubuntu image. Only most basic OS packages are installed in the base image. 
+
++ Configure and start your systems (both production and analytics). Your scripts tell me how/where to access
+the front end.  
+
++ Have options to start the analytic tasks. 
+
++ You can save the results of the analytic tasks to file, and tell me how/where to access the file. 
